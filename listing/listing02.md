@@ -8,21 +8,21 @@ import (
 )
 
 
-func test() (x int) {
+func test() (x int) { // 0
 	defer func() {
-		x++
+		x++ // 2
 	}()
-	x = 1
+	x = 1 // 1
 	return
 }
 
 
 func anotherTest() int {
-	var x int
+	var x int // nil
 	defer func() {
-		x++
+		x++ // 2
 	}()
-	x = 1
+	x = 1 // 1
 	return x
 }
 

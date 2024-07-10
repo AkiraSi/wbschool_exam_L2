@@ -18,6 +18,14 @@ package main
 Функция должна проходить все тесты. Код должен проходить проверки go vet и golint.
 */
 
+func unpack(input string) string {
+	runeSample := []rune(input)
+	var output string
+	for _, letter := range input {
+		output += string(runeSample)
+	}
+}
+
 func main() {
 
 }
