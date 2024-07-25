@@ -41,8 +41,7 @@ func main() {
 			for _, fieldStr := range strings.Split(*fields, ",") {
 				field, err := strconv.Atoi(fieldStr)
 				if err != nil {
-					fmt.Fprintf(os.Stderr, "Invalid field number: %s\n", fieldStr)
-					os.Exit(1)
+					log.Fatalln(err, fieldStr)
 				}
 				if field >= 1 && field <= len(columns) {
 					selectedFields = append(selectedFields, columns[field-1])
