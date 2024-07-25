@@ -28,9 +28,6 @@ func main() {
 	println("ok")
 }
 ```
-
-Ответ:
 ```
-...
-
+Ответ: error, интерфейс не равен nil, (err.data = nil, но err.itab != nil)
 ```

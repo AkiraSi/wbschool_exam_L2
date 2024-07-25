@@ -20,9 +20,6 @@ func modifySlice(i []string) {
 	i = append(i, "6")
 }
 ```
-
-Ответ:
 ```
-...
-
+Ответ: Вывод: [3 2 3]
 ```
